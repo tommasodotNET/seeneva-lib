@@ -698,7 +698,7 @@ dependencies = [
 [[package]]
 name = "libarchive-sys"
 version = "0.1.1"
-source = "git+https://github.com/tommasodotNET/libarchive-sys.git?rev=64d9fbbf7455d5698ebda2ed45def1e1a7d6e3ff#64d9fbbf7455d5698ebda2ed45def1e1a7d6e3ff"
+source = "git+https://github.com/tommasodotNET/libarchive-sys.git?rev=97467a146a67344da10d678bdb5107048a723173#97467a146a67344da10d678bdb5107048a723173"
 dependencies = [
  "bindgen 0.58.1",
  "build-deps",

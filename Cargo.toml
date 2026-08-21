@@ -49,4 +49,4 @@ tflite_with_ruy = ["tflite-rs/with_ruy"]
 debug_logs = []
 
 [patch."https://github.com/Seeneva/libarchive-sys.git"]
-libarchive-sys = { git = "https://github.com/tommasodotNET/libarchive-sys.git", rev = "64d9fbbf7455d5698ebda2ed45def1e1a7d6e3ff" }
+libarchive-sys = { git = "https://github.com/tommasodotNET/libarchive-sys.git", rev = "97467a146a67344da10d678bdb5107048a723173" }
