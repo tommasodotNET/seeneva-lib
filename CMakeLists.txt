@@ -82,6 +82,10 @@ list(APPEND CARGO_COMMAND ${CARGO} build --target=${RUST_TARGET_TRIPPLE} --featu
 set(C_FLAGS ${CMAKE_C_FLAGS} ${CMAKE_SHARED_LIBRARY_C_FLAGS})
 set(CXX_FLAGS ${CMAKE_CXX_FLAGS} ${CMAKE_SHARED_LIBRARY_CXX_FLAGS})
 
+# Android devices with 16 KB memory pages require ELF LOAD segments to use
+# compatible alignment.
+list(APPEND RUST_FLAGS "-C link-arg=-Wl,-z,max-page-size=16384")
+
 if(LIB_DEB_SYMBOLS)
     # rustflags = [
     # # Add build-id to help LLDB find debug symbols for result stripped .so file using `$lldb settings append target.exec-search-paths`
